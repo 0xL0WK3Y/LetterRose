@@ -15,7 +15,7 @@ public class Base64Tool
 	{
 		//Decrypt the text and return the result.
 		byte[] text = txt.getBytes();
-		byte[] decode = Base64.getDecoder().decode(text);
-		return new String(decode);
+		byte[] decoded = Base64.getDecoder().decode(text);
+		return new String(decoded);
 	}
 }
