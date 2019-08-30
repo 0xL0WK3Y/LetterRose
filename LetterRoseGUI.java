@@ -136,7 +136,7 @@ public class LetterRoseGUI extends Application implements EventHandler<ActionEve
 					processedText = caesar.decrypt(text,key);
 					convertedField.setText(processedText);
 				}
-				else if(comboBox.getValue().equals("Base64 Tool")) //Encrypt using Base64
+				else if(comboBox.getValue().equals("Base64 Tool")) //Decrypt using Base64
 				{
 					text = inputedField.getText();
 					Base64Tool b64t = new Base64Tool();
